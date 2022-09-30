@@ -99,15 +99,15 @@ def statistic_per_day(datos,media,showdata):
             row=1, col=1
             )
         fig.add_trace(
-            go.Scatter(y=media_movil2.Promedio, x=media_movil2.Dia, name='Media móvil-Cierre'),
+            go.Scatter(y=media_movil2.Promedio, x=media_movil2.Dia, name='Media móvil-Apertura'),
             row=2, col=1
             )
         fig.add_trace(
-            go.Scatter(y=media_movil3.Promedio, x=media_movil3.Dia, name='Media móvil-Cierre'),
+            go.Scatter(y=media_movil3.Promedio, x=media_movil3.Dia, name='Media móvil-Alto'),
             row=3, col=1
             )
         fig.add_trace(
-            go.Scatter(y=media_movil4.Promedio, x=media_movil4.Dia, name='Media móvil-Cierre'),
+            go.Scatter(y=media_movil4.Promedio, x=media_movil4.Dia, name='Media móvil-Bajo'),
             row=4, col=1
             )
     fig.update_layout(height=1200, width=800)
